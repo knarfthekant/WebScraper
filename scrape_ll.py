@@ -48,8 +48,8 @@ class LoblawsScraper:
         time.sleep(5)
         elements = self.driver.find_elements(By.XPATH, '//div[@class="css-yyn1h"]')
         for element in elements:
-            name = element.find_element(By.XPATH, './/h3[@data-testid="product-title"]').text
-            price = element.find_element(By.XPATH, './/span[@data-testid="regular-price"]|.//span[@data-testid="sale-price"]').text
-            results.append((name, price))
+            product_name = element.find_element(By.XPATH, './/h3[@data-testid="product-title"]').text
+            product_price = element.find_element(By.XPATH, './/span[@data-testid="regular-price"]|.//span[@data-testid="sale-price"]').text
+            results.append((product_name, product_price))
         return results
         
