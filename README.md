@@ -7,7 +7,6 @@ This Python project uses **Selenium** to scrape grocery product and pricing data
 - **Automated web scraping** from dynamic, JavaScript-rendered pages
 - Extracts **product names** and **prices** (what essentially matters)
 - Cleans and structures data with `pandas` for easy analysis
-- Compares products across multiple retailers to find the best prices
 
 ## Technologies Used
 
